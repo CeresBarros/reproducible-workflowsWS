@@ -1,0 +1,10 @@
+---
+title: "Reproducible workflows workshop"
+author: "Ceres Barros"
+date: "Last updated `r format(Sys.time(), '%B %Y')"
+comments: false
+---
+
+Welcome to the Reproducible Workflows Workshop website.
+
+Here you will find all the materials used during the workshop, including presentations, code and other useful information.

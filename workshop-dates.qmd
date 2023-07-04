@@ -1,0 +1,12 @@
+---
+title: "Workshop dates"
+author: "Ceres Barros"
+date: "Last updated `r format(Sys.time(), '%B %Y')"
+comments: false
+---
+
+## Up-coming workshops
+
+- 2023 BES Macroecology SIG annual meeting - MacroBrum 2023 - July 12-13th, 2023, Birmingham UK
+
+
