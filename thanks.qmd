@@ -5,7 +5,7 @@ date: "Last updated `r format(Sys.time(), '%B %Y')"
 comments: false
 ---
 
-We are thankful to many researchers across the globe who have developed increadible tools and resources to both enable and teach the development of reproducible workflows. Amongst these, special thanks go to:
+We are thankful to many researchers across the globe who have developed incredible tools and resources to both enable and teach the development of reproducible workflows. Amongst these, special thanks go to:
 
 - Dr Eliot McIntire and the [Predictive Ecology Community](https://predictiveecology.org/)
 - [Dr Alex Chubaty](https://www.alexchubaty.com/)

@@ -1,0 +1,133 @@
+---
+title: "Reproducible workflows with R and GitHub"
+author: "Ceres Barros"
+format: revealjs
+editor: visual
+date: "Last updated `r format(Sys.time(), '%B %Y')"
+comments: false
+---
+
+## Repeatability, reproducibility, reusability and transparency -- R\^3T 
+
+### What?
+
+* Reproducibility != Reusability != repeatability
+
+* Repeatability = agreement of results obtained by the same individual using same methods
+
+* Reproducibility = agreement of results obtained by two individuals/groups using same methods
+
+* Reusability = ability to re-use the same methods in slightly different contexts (e.g. moving to a different study area)
+
+
+* Reproducibility enhances and depends on transparency.
+
+* Reusability requires transparency, and should be built on reproducibility
+
+* Particularly useful when outputs depend on modelling (statistical or simulation)
+
+## Repeatability, reproducibility, reusability and transparency -- R\^3T 
+
+### Why?
+
+* Trust
+
+* Benchmarking & meta-analyses
+
+* Building-on & improving analyses/models/workflows
+
+## Repeatability, reproducibility, reusability and transparency -- R\^3T 
+
+### How?
+
+Depends on context
+* Size of project - “big data”? “Big models”? 
+
+* Purpose – regularly updated forecasts? Archiving/publishing analyses associated with publication? Teaching?
+
+* Type of workflow – data-based? Conceptual? Mathematical? Statistical?
+
+* Audience – academic? Public?
+
+
+*  Data -> analyses -> reporting linkages (where is the data stored? How are outputs produced? Where will outputs live? Will they be part of a report/publication?)
+
+Most ecological research likely benefits from using a R^3T approach, but the tools used to accomplish it can be varied
+
+## General guidelines
+
+### Scripting/executing the workflow
+1. Script, script, script
+  * **Goal**: no “secret handshakes” + record all steps to an analysis
+  * **Interpreted languages** (real-time user interaction): R, Julia, Python…
+  * **Compiled languages** (pre-compiled programs): C, C++, C#, Fortran,… Do you really need this?
+  * Script ALL steps – this includes package/library installation/loading!
+  
+2. Minimize types of software/languages used
+  * **Goal**: increase workflow robustness by needing in fewer “moving parts”, fewer “secret handshakes”
+  * prefer an interpreted language and script calls to separate software when possible (e.g., to compiled programs)
+
+3. “Modularize” and “functionize” (!) 
+  * **Goal**: code organisation/readability; easier propagation of code updates/changes
+  * Avoid looooooooong scripts
+  * Break scripts into logical pieces
+  * Try to encapsulate code into function, especially functions used multiple times and in multiple places
+  * Advanced users: consider “packaging” your functions.
+  
+4. Centralise your workflow/sequence
+  * **Goal**: no “secret handshakes” + ensure all scripts and utilised in correct way/sequence
+  * Call/execute scripts from a single "control" script
+
+## General guidelines
+
+### Project structure and workflow management
+  
+5. Project-oriented workflows
+  * **Goal**: the entirely workflow can be re-run without changing code or files
+  * Choose a structure that is self-explanatory
+  * Relative paths VS absolute paths
+  * Project-libraries
+  * Self-contained workflows (e.g. Rstudio-projects)
+  
+Containerisation (e.g. Docker)
+
+6. Workflow management systems (WMS)
+  * **Goal**: automated chaining of steps and data flows
+  * Enable reproducing parts or the totality of the flow
+  * Can include caching and memoising, to skip steps that need not be repeated
+  * Will explicitly integrate all steps of the workflow
+  * Many tools available depending on programming language and context. In R examples are `targets`, `SpaDES`, `drake`
+  
+<!-- insert SpaDES workflow figure here --> 
+
+## General guidelines
+
+### Version control
+
+7. Version control
+* **Goal**: tracking changes in code + continuous and collaborative development
+* Keeps a formal record of all changes
+* Allows recovering old versions and keeping multiple versions of the same code.
+Many tools available: Git, CVS, SVN, …
+
+We'll come back to this!
+
+## General guidelines
+
+### Testing
+
+8. Integrated testing
+  * **Goal**: ensure code robustness
+  * Not always necessary, but always a good idea ;)
+  * Integration tests vs assertions vs unit tests
+  * Can be run “manually” or automatically, as part of the workflow (assertions) or separately (unit tests and integration tests) 
+  * Can be as small as ensuring a column in a table contains character or numeric data.
+  * `testthat` for R (unit tests); simple embedded code/object checks for assertions tests; GitHub Actions and Travis CI for automated testing.
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+---
+title: "Tutorials & Examples"
+author: "Ceres Barros"
+date: "Last updated `r format(Sys.time(), '%B %Y')"
+comments: false
+---
+
+## Reproducible workflows in R
+
+- Reproducible species distribution models (SDMs) in R
+
+## Reproducible workflows in R **and** SpaDES
+
+-  Reproducible species distribution models (SDMs) with SpaDES: SpaDES4Dummies - Part 2
