@@ -1,7 +1,8 @@
 ---
 title: "Tutorials & Examples"
 author: "Ceres Barros"
-date: "Last updated `r format(Sys.time(), '%B %Y')"
+date: last-modified
+date-format: long
 comments: false
 ---
 
