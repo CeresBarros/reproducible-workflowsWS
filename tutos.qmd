@@ -8,7 +8,11 @@ comments: false
 
 ## Reproducible workflows in R
 
--  [Reproducible workflow example for species distribution modelling in R.](https://htmlpreview.github.io/?https://github.com/CeresBarros/reproducible-workflows-example/blob/main/global.html)
+-  **Reproducible workflow example for species distribution modelling in R**
+
+```{=html}
+<iframe width="780" height="600" src="https://htmlpreview.github.io/?https://github.com/CeresBarros/reproducible-workflows-example/blob/main/global.html"></iframe>
+```
 
 ## Reproducible workflows in R **and** SpaDES
 
