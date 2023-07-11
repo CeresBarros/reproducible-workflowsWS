@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This website hosts live resources used for the “Reproducible workflows” workshop, developed by Dr Ceres Barros with a lot of inspiration from other resources (see Thanks)\nThe workshop materials presented here were initially conceived for the BES Macroecology SIG meeting held in Birmingham, UK, July 12-13th, 2023.\nPowered by Quarto"
+  },
+  {
+    "objectID": "about.html#workshop-facilitators",
+    "href": "about.html#workshop-facilitators",
+    "title": "About",
+    "section": "Workshop facilitators",
+    "text": "Workshop facilitators\n\nDr Ceres Barros\nCeres is a Research Ecologist at the Future Forest Ecosystems Centre, within the British Columbia Ministry of Forests, Canada. She has several years of experience in using complex ecological models to understand and forecast ecosystem responses to environmental change (e.g. climate change, fire disturbances, land-use changes, among others) both in applied and theoretical contexts. She has merged her passion to understand ecosystem stability, with her dedication to developing models and modelling tools that are grounded on data, reproducible, reusable and transparent, but also accessible to most ecologists. Her models and workflows are based in R (a programming language most ecologists understand), using SpaDES [a workflow manager, providing a modelling standard and toolkit in R; Chubaty and McIntire (n.d.)] and GitHub to promote collaboration with other model developers within and across disciplines.\nCeres lives in Victoria, BC."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Reproducible workflows workshop",
+    "section": "",
+    "text": "Welcome to the Reproducible Workflows Workshop website.\nHere you will find all the materials used during the workshop, including presentations, code and other useful information.\n\n\n\nPowered by Quarto"
+  },
+  {
+    "objectID": "presentations.html",
+    "href": "presentations.html",
+    "title": "Presentations",
+    "section": "",
+    "text": "BES Macroecology SIG meeting 2023, Birmingham UK\n\n\n\n\nPowered by Quarto"
+  },
+  {
+    "objectID": "thanks.html",
+    "href": "thanks.html",
+    "title": "Thanks",
+    "section": "",
+    "text": "I am thankful to many researchers across the globe who have developed incredible tools and resources to both enable and teach the development of reproducible workflows. Amongst these, special thanks go to:\nPowered by Quarto"
+  },
+  {
+    "objectID": "thanks.html#sponsors-and-supporters",
+    "href": "thanks.html#sponsors-and-supporters",
+    "title": "Thanks",
+    "section": "Sponsors and supporters",
+    "text": "Sponsors and supporters\nI am also grateful for the logistic and financial support from: - The Future Forecasting Ecosystems Centre and BC Ministry of Forests, Canada; - The British Ecological Society"
+  },
+  {
+    "objectID": "tutos.html",
+    "href": "tutos.html",
+    "title": "Tutorials & Examples",
+    "section": "",
+    "text": "Reproducible workflow example for species distribution modelling in R.\nPowered by Quarto"
+  },
+  {
+    "objectID": "tutos.html#reproducible-workflows-in-r",
+    "href": "tutos.html#reproducible-workflows-in-r",
+    "title": "Tutorials & Examples",
+    "section": "",
+    "text": "Reproducible workflow example for species distribution modelling in R."
+  },
+  {
+    "objectID": "tutos.html#reproducible-workflows-in-r-and-spades",
+    "href": "tutos.html#reproducible-workflows-in-r-and-spades",
+    "title": "Tutorials & Examples",
+    "section": "Reproducible workflows in R and SpaDES",
+    "text": "Reproducible workflows in R and SpaDES\n\nComing soon"
+  },
+  {
+    "objectID": "workshop-dates.html",
+    "href": "workshop-dates.html",
+    "title": "Workshop dates",
+    "section": "",
+    "text": "2023 BES Macroecology SIG annual meeting - MacroBrum 2023 - July 12th, 2023, Birmingham UK\nPowered by Quarto"
+  },
+  {
+    "objectID": "workshop-dates.html#up-coming-workshops",
+    "href": "workshop-dates.html#up-coming-workshops",
+    "title": "Workshop dates",
+    "section": "",
+    "text": "2023 BES Macroecology SIG annual meeting - MacroBrum 2023 - July 12th, 2023, Birmingham UK"
+  }
+]
