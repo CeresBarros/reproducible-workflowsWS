@@ -8,8 +8,8 @@ comments: false
 
 ## Reproducible workflows in R
 
-- Reproducible species distribution models (SDMs) in R
+-  [Reproducible workflow example for species distribution modelling in R.](https://htmlpreview.github.io/?https://github.com/CeresBarros/reproducible-workflows-example/blob/main/global.html)
 
 ## Reproducible workflows in R **and** SpaDES
 
--  Reproducible species distribution models (SDMs) with SpaDES: SpaDES4Dummies - Part 2
+-  Coming soon

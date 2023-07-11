@@ -6,7 +6,7 @@ date-format: long
 comments: false
 ---
 
-We are thankful to many researchers across the globe who have developed incredible tools and resources to both enable and teach the development of reproducible workflows. Amongst these, special thanks go to:
+I am thankful to many researchers across the globe who have developed incredible tools and resources to both enable and teach the development of reproducible workflows. Amongst these, special thanks go to:
 
 - Dr Eliot McIntire and the [Predictive Ecology Community](https://predictiveecology.org/)
 - [Dr Alex Chubaty](https://www.alexchubaty.com/)
@@ -14,8 +14,6 @@ We are thankful to many researchers across the globe who have developed incredib
 
 ## Sponsors and supporters
 
-We are also deeply thankful to the following entities, who have logistic and financially supported the workshops:
+I am also grateful for the logistic and financial support from:
 - The Future Forecasting Ecosystems Centre and BC Ministry of Forests, Canada;
 - The [British Ecological Society](https://www.britishecologicalsociety.org/)
-
-<!-- TODO: add MoF logo --> 

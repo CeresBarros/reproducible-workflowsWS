@@ -9,7 +9,7 @@
 <meta name="author" content="Ceres Barros">
 <meta name="dcterms.date" content="2023-07-10">
 
-<title>Reproducible workflows - Reproducible workflows workshop</title>
+<title>Reproducible workflows - About</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +22,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -84,11 +103,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -135,14 +154,23 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#workshop-facilitators" id="toc-workshop-facilitators" class="nav-link active" data-scroll-target="#workshop-facilitators">Workshop facilitators</a>
+  <ul class="collapse">
+  <li><a href="#dr-ceres-barros" id="toc-dr-ceres-barros" class="nav-link" data-scroll-target="#dr-ceres-barros">Dr Ceres Barros</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Reproducible workflows workshop</h1>
+<h1 class="title">About</h1>
 </div>
 
 
@@ -169,12 +197,25 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Welcome to the Reproducible Workflows Workshop website.</p>
-<p>Here you will find all the materials used during the workshop, including presentations, code and other useful information.</p>
+<p>This website hosts live resources used for the “Reproducible workflows” workshop, developed by Dr Ceres Barros with a lot of inspiration from other resources (see <a href="./thanks.html">Thanks</a>)</p>
+<p>The workshop materials presented here were initially conceived for the BES Macroecology SIG meeting held in Birmingham, UK, July 12-13th, 2023.</p>
+<section id="workshop-facilitators" class="level2">
+<h2 class="anchored" data-anchor-id="workshop-facilitators">Workshop facilitators</h2>
+<section id="dr-ceres-barros" class="level3">
+<h3 class="anchored" data-anchor-id="dr-ceres-barros">Dr Ceres Barros</h3>
+<p>Ceres is a Research Ecologist at the Future Forest Ecosystems Centre, within the British Columbia Ministry of Forests, Canada. She has several years of experience in using complex ecological models to understand and forecast ecosystem responses to environmental change (e.g.&nbsp;climate change, fire disturbances, land-use changes, among others) both in applied and theoretical contexts. She has merged her passion to understand ecosystem stability, with her dedication to developing models and modelling tools that are grounded on data, reproducible, reusable and transparent, but also accessible to most ecologists. Her models and workflows are based in <a href="#0">R</a> (a programming language most ecologists understand), using SpaDES [a workflow manager, providing a modelling standard and toolkit in R; <span class="citation" data-cites="chubaty">Chubaty and McIntire (<a href="#ref-chubaty" role="doc-biblioref">n.d.</a>)</span>] and <a href="#0">GitHub</a> to promote collaboration with other model developers within and across disciplines.</p>
+<p>Ceres lives in Victoria, BC.</p>
 
 
 
-<p>Powered by <a href="https://quarto.org/">Quarto</a></p></main> <!-- /main -->
+</section>
+</section>
+
+<p>Powered by <a href="https://quarto.org/">Quarto</a></p><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-chubaty" class="csl-entry" role="listitem">
+Chubaty, Alex M., and Eliot J. B. McIntire. n.d. <em>SpaDES: Develop and Run Spatially Explicit Discrete Event Simulation Models</em>. <a href="https://CRAN.R-project.org/package=SpaDES">https://CRAN.R-project.org/package=SpaDES</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

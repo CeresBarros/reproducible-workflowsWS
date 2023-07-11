@@ -8,6 +8,10 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - workshop-dates.qmd
+      - presentations.qmd
+      - tutos.qmd
+      - thanks.qmd
     tools:
       - icon: github
         menu:
@@ -17,14 +21,12 @@ website:
             url: https://..../Issues
   body-footer: |
     Powered by [Quarto](https://quarto.org/)
-  cookie-consent:
-    type: express
 
 format:
   html:
     theme:
       light: minty
-      dark: minty
+      dark: darkly
     toc: true
     html-math-method: katex
 

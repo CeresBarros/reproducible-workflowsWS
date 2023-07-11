@@ -1,100 +1,79 @@
 [
   {
-    "objectID": "presentation.html#repeatability-reproducibility-reusability-and-transparency-r3t",
-    "href": "presentation.html#repeatability-reproducibility-reusability-and-transparency-r3t",
-    "title": "Reproducible workflows with R and GitHub",
-    "section": "Repeatability, reproducibility, reusability and transparency – R^3T",
-    "text": "Repeatability, reproducibility, reusability and transparency – R^3T\nWhat?\n\nReproducibility != Reusability != repeatability\nRepeatability = agreement of results obtained by the same individual using same methods\nReproducibility = agreement of results obtained by two individuals/groups using same methods\nReusability = ability to re-use the same methods in slightly different contexts (e.g. moving to a different study area)\nReproducibility enhances and depends on transparency.\nReusability requires transparency, and should be built on reproducibility\nParticularly useful when outputs depend on modelling (statistical or simulation)"
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This website hosts live resources used for the “Reproducible workflows” workshop, developed by Dr Ceres Barros with a lot of inspiration from other resources (see Thanks)\nThe workshop materials presented here were initially conceived for the BES Macroecology SIG meeting held in Birmingham, UK, July 12-13th, 2023.\nPowered by Quarto"
   },
   {
-    "objectID": "presentation.html#repeatability-reproducibility-reusability-and-transparency-r3t-1",
-    "href": "presentation.html#repeatability-reproducibility-reusability-and-transparency-r3t-1",
-    "title": "Reproducible workflows with R and GitHub",
-    "section": "Repeatability, reproducibility, reusability and transparency – \\(R^3T\\)",
-    "text": "Repeatability, reproducibility, reusability and transparency – \\(R^3T\\)\nWhy?\n\nTrust\nBenchmarking & meta-analyses\nBuilding-on & improving analyses/models/workflows"
+    "objectID": "about.html#workshop-facilitators",
+    "href": "about.html#workshop-facilitators",
+    "title": "About",
+    "section": "Workshop facilitators",
+    "text": "Workshop facilitators\n\nDr Ceres Barros\nCeres is a Research Ecologist at the Future Forest Ecosystems Centre, within the British Columbia Ministry of Forests, Canada. She has several years of experience in using complex ecological models to understand and forecast ecosystem responses to environmental change (e.g. climate change, fire disturbances, land-use changes, among others) both in applied and theoretical contexts. She has merged her passion to understand ecosystem stability, with her dedication to developing models and modelling tools that are grounded on data, reproducible, reusable and transparent, but also accessible to most ecologists. Her models and workflows are based in R (a programming language most ecologists understand), using SpaDES [a workflow manager, providing a modelling standard and toolkit in R; Chubaty and McIntire (n.d.)] and GitHub to promote collaboration with other model developers within and across disciplines.\nCeres lives in Victoria, BC."
   },
   {
-    "objectID": "presentation.html#repeatability-reproducibility-reusability-and-transparency-r3t-2",
-    "href": "presentation.html#repeatability-reproducibility-reusability-and-transparency-r3t-2",
-    "title": "Reproducible workflows with R and GitHub",
-    "section": "Repeatability, reproducibility, reusability and transparency – \\(R^3T\\)",
-    "text": "Repeatability, reproducibility, reusability and transparency – \\(R^3T\\)\nHow?\nDepends on context * Size of project - “big data”? “Big models”?\n\nPurpose – regularly updated forecasts? Archiving/publishing analyses associated with publication? Teaching?\nType of workflow – data-based? Conceptual? Mathematical? Statistical?\nAudience – academic? Public?\nData -&gt; analyses -&gt; reporting linkages (where is the data stored? How are outputs produced? Where will outputs live? Will they be part of a report/publication?)\n\nMost ecological research likely benefits from using a \\(R^3T\\) approach, but the tools used to accomplish it can be varied"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Reproducible workflows workshop",
+    "section": "",
+    "text": "Welcome to the Reproducible Workflows Workshop website.\nHere you will find all the materials used during the workshop, including presentations, code and other useful information.\n\n\n\nPowered by Quarto"
   },
   {
-    "objectID": "presentation.html#general-guidelines",
-    "href": "presentation.html#general-guidelines",
-    "title": "Reproducible workflows with R and GitHub",
-    "section": "General guidelines",
-    "text": "General guidelines\nScripting/executing the workflow\n\nScript, script, script\n\nGoal: no “secret handshakes” + record all steps to an analysis\nInterpreted languages (real-time user interaction): R, Julia, Python…\nCompiled languages (pre-compiled programs): C, C++, C#, Fortran,… Do you really need this?\nScript ALL steps – this includes package/library installation/loading!\n\n\n\n\nMinimize types of software/languages used\n\nGoal: increase workflow robustness by needing in fewer “moving parts”, fewer “secret handshakes”\nprefer an interpreted language and script calls to separate software when possible (e.g., to compiled programs)\n\n\n\n\n“Modularize” and “functionize” (!)\n\nGoal: code organisation/readability; easier propagation of code updates/changes\nAvoid looooooooong scripts\nBreak scripts into logical pieces\nTry to encapsulate code into function, especially functions used multiple times and in multiple places\nAdvanced users: consider “packaging” your functions.\n\n\n\n\nCentralise your workflow/sequence\n\nGoal: no “secret handshakes” + ensure all scripts and utilised in correct way/sequence\nCall/execute scripts from a single “control” script"
+    "objectID": "presentations.html",
+    "href": "presentations.html",
+    "title": "Presentations",
+    "section": "",
+    "text": "BES Macroecology SIG meeting 2023, Birmingham UK\n\n\n\n\nPowered by Quarto"
   },
   {
-    "objectID": "presentation.html#general-guidelines-1",
-    "href": "presentation.html#general-guidelines-1",
-    "title": "Reproducible workflows with R and GitHub",
-    "section": "General guidelines",
-    "text": "General guidelines\nProject structure and workflow management\n\nProject-oriented workflows\n\nGoal: the entirely workflow can be re-run without changing code or files\nChoose a structure that is self-explanatory\nRelative paths VS absolute paths\nProject-libraries\nSelf-contained workflows (e.g. Rstudio-projects)\n\n\nContainerisation (e.g. Docker)\n\nWorkflow management systems (WMS)\n\nGoal: automated chaining of steps and data flows\nEnable reproducing parts or the totality of the flow\nCan include caching and memoising, to skip steps that need not be repeated\nWill explicitly integrate all steps of the workflow\nMany tools available depending on programming language and context. In R examples are targets, SpaDES, drake"
+    "objectID": "thanks.html",
+    "href": "thanks.html",
+    "title": "Thanks",
+    "section": "",
+    "text": "I am thankful to many researchers across the globe who have developed incredible tools and resources to both enable and teach the development of reproducible workflows. Amongst these, special thanks go to:\nPowered by Quarto"
   },
   {
-    "objectID": "presentation.html#general-guidelines-2",
-    "href": "presentation.html#general-guidelines-2",
-    "title": "Reproducible workflows with R and GitHub",
-    "section": "General guidelines",
-    "text": "General guidelines\nVersion control\n\nVersion control\n\nGoal: tracking changes in code + continuous and collaborative development\nKeeps a formal record of all changes\nAllows recovering old versions and keeping multiple versions of the same code. Many tools available: Git, CVS, SVN, …\n\n\n. . .\n We’ll come back to this!"
+    "objectID": "thanks.html#sponsors-and-supporters",
+    "href": "thanks.html#sponsors-and-supporters",
+    "title": "Thanks",
+    "section": "Sponsors and supporters",
+    "text": "Sponsors and supporters\nI am also grateful for the logistic and financial support from: - The Future Forecasting Ecosystems Centre and BC Ministry of Forests, Canada; - The British Ecological Society"
   },
   {
-    "objectID": "presentation.html#general-guidelines-3",
-    "href": "presentation.html#general-guidelines-3",
-    "title": "Reproducible workflows with R and GitHub",
-    "section": "General guidelines",
-    "text": "General guidelines\nTesting\n\nIntegrated testing\n\nGoal: ensure code robustness\nNot always necessary, but always a good idea ;)\nIntegration tests vs assertions vs unit tests\nCan be run “manually” or automatically, as part of the workflow (assertions) or separately (unit tests and integration tests)\nCan be as small as ensuring a column in a table contains character or numeric data.\ntestthat for R (unit tests); simple embedded code/object checks for assertions tests; GitHub Actions and Travis CI for automated testing."
+    "objectID": "tutos.html",
+    "href": "tutos.html",
+    "title": "Tutorials & Examples",
+    "section": "",
+    "text": "Reproducible workflow example for species distribution modelling in R.\nPowered by Quarto"
   },
   {
-    "objectID": "presentation.html#what",
-    "href": "presentation.html#what",
-    "title": "Reproducible workflows with R and GitHub",
-    "section": "What?",
-    "text": "What?\n\n\nReproducibility != Reusability != repeatability\nRepeatability = agreement of results obtained by the same individual using same methods\nReproducibility = agreement of results obtained by two individuals/groups using same methods\nReusability = ability to re-use the same methods in slightly different contexts (e.g. moving to a different study area)\nReproducibility enhances and depends on transparency.\nReusability requires transparency, and should be built on reproducibility\nParticularly useful when outputs depend on modelling (statistical or simulation)"
+    "objectID": "tutos.html#reproducible-workflows-in-r",
+    "href": "tutos.html#reproducible-workflows-in-r",
+    "title": "Tutorials & Examples",
+    "section": "",
+    "text": "Reproducible workflow example for species distribution modelling in R."
   },
   {
-    "objectID": "presentation.html#why",
-    "href": "presentation.html#why",
-    "title": "Reproducible workflows with R and GitHub",
-    "section": "Why?",
-    "text": "Why?\n\n\nTrust\nBenchmarking & meta-analyses\nBuilding-on & improving analyses/models/workflows"
+    "objectID": "tutos.html#reproducible-workflows-in-r-and-spades",
+    "href": "tutos.html#reproducible-workflows-in-r-and-spades",
+    "title": "Tutorials & Examples",
+    "section": "Reproducible workflows in R and SpaDES",
+    "text": "Reproducible workflows in R and SpaDES\n\nComing soon"
   },
   {
-    "objectID": "presentation.html#how",
-    "href": "presentation.html#how",
-    "title": "Reproducible workflows with R and GitHub",
-    "section": "How?",
-    "text": "How?\nDepends on context\n\n\nSize of project - “big data”? “Big models”?\nPurpose – regularly updated forecasts? Archiving/publishing analyses associated with publication? Teaching?\nType of workflow – data-based? Conceptual? Mathematical? Statistical?\nAudience – academic? Public?\nData -&gt; analyses -&gt; reporting linkages (where is the data stored? How are outputs produced? Where will outputs live? Will they be part of a report/publication?)\n\n\n\n\nMost ecological research likely benefits from using a \\(R^3T\\) approach, but the tools used to accomplish it can be varied"
+    "objectID": "workshop-dates.html",
+    "href": "workshop-dates.html",
+    "title": "Workshop dates",
+    "section": "",
+    "text": "2023 BES Macroecology SIG annual meeting - MacroBrum 2023 - July 12-13th, 2023, Birmingham UK\nPowered by Quarto"
   },
   {
-    "objectID": "presentation.html#scriptingexecuting-the-workflow",
-    "href": "presentation.html#scriptingexecuting-the-workflow",
-    "title": "Reproducible workflows with R and GitHub",
-    "section": "1. Scripting/executing the workflow",
-    "text": "1. Scripting/executing the workflow\n1.1 Script, script, script - Goal: no “secret handshakes” + record all steps to an analysis - Interpreted languages (real-time user interaction): R, Julia, Python… - Compiled languages (pre-compiled programs): C, C++, C#, Fortran,… Do you really need this? - Script ALL steps – this includes package/library installation/loading!\n\n1.2 Minimize types of software/languages used - Goal: increase workflow robustness by needing in fewer “moving parts”, fewer “secret handshakes” - prefer an interpreted language and script calls to separate software when possible (e.g., to compiled programs)\n\n1.3 “Modularize” and “functionize” (!) - Goal: code organisation/readability; easier propagation of code updates/changes - Avoid looooooooong scripts - Break scripts into logical pieces - Try to encapsulate code into function, especially functions used multiple times and in multiple places - Advanced users: consider “packaging” your functions.\n\n1.4 Centralise your workflow/sequence - Goal: no “secret handshakes” + ensure all scripts and utilised in correct way/sequence - Call/execute scripts from a single “control” script"
-  },
-  {
-    "objectID": "presentation.html#project-structure-and-workflow-management",
-    "href": "presentation.html#project-structure-and-workflow-management",
-    "title": "Reproducible workflows with R and GitHub",
-    "section": "2. Project structure and workflow management",
-    "text": "2. Project structure and workflow management\n2.1 Project-oriented workflows - Goal: the entirely workflow can be re-run without changing code or files - Choose a structure that is self-explanatory - Relative paths VS absolute paths - Project-libraries - Self-contained workflows (e.g. Rstudio-projects)\nContainerisation (e.g. Docker)\n2.2 Workflow management systems (WMS) - Goal: automated chaining of steps and data flows - Enable reproducing parts or the totality of the flow - Can include caching and memoising, to skip steps that need not be repeated - Will explicitly integrate all steps of the workflow - Many tools available depending on programming language and context. In R examples are targets, SpaDES, drake"
-  },
-  {
-    "objectID": "presentation.html#version-control",
-    "href": "presentation.html#version-control",
-    "title": "Reproducible workflows with R and GitHub",
-    "section": "3. Version control",
-    "text": "3. Version control\n3.1 Version control - Goal: tracking changes in code + continuous and collaborative development - Keeps a formal record of all changes - Allows recovering old versions and keeping multiple versions of the same code. Many tools available: Git, CVS, SVN, …\n\n\nWe’ll come back to this!"
-  },
-  {
-    "objectID": "presentation.html#testing",
-    "href": "presentation.html#testing",
-    "title": "Reproducible workflows with R and GitHub",
-    "section": "4. Testing",
-    "text": "4. Testing\n4.1 Integrated testing - Goal: ensure code robustness - Not always necessary, but always a good idea ;) - Integration tests vs assertions vs unit tests - Can be run “manually” or automatically, as part of the workflow (assertions) or separately (unit tests and integration tests) - Can be as small as ensuring a column in a table contains character or numeric data. - testthat for R (unit tests); simple embedded code/object checks for assertions tests; GitHub Actions and Travis CI for automated testing."
+    "objectID": "workshop-dates.html#up-coming-workshops",
+    "href": "workshop-dates.html#up-coming-workshops",
+    "title": "Workshop dates",
+    "section": "",
+    "text": "2023 BES Macroecology SIG annual meeting - MacroBrum 2023 - July 12-13th, 2023, Birmingham UK"
   }
 ]

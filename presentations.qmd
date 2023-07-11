@@ -1,0 +1,10 @@
+---
+title: "Presentations"
+author: "Ceres Barros"
+date: last-modified
+date-format: long
+comments: false
+---
+
+-  [BES Macroecology SIG meeting 2023, Birmingham UK](presentations/20230712_BESMacroSIG2023_ReproducibleWorkflowsWS.pdf)
+
