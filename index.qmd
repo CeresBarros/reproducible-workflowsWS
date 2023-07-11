@@ -8,4 +8,6 @@ comments: false
 
 Welcome to the Reproducible Workflows Workshop website.
 
-Here you will find all the materials used during the workshop, including presentations, code and other useful information.
+Here you will find the Reproducible Workshops materials, including presentations, code and other useful information. 
+
+This is a live site and resources will be added as they become available.
