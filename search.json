@@ -18,7 +18,7 @@
     "href": "index.html",
     "title": "Reproducible workflows workshop",
     "section": "",
-    "text": "Welcome to the Reproducible Workflows Workshop website.\nHere you will find all the materials used during the workshop, including presentations, code and other useful information.\n\n\n\nPowered by Quarto"
+    "text": "Welcome to the Reproducible Workflows Workshop website.\nHere you will find the Reproducible Workshops materials, including presentations, code and other useful information.\nThis is a live site and resources will be added as they become available.\n\n\n\nPowered by Quarto"
   },
   {
     "objectID": "presentations.html",
@@ -39,7 +39,7 @@
     "href": "thanks.html#sponsors-and-supporters",
     "title": "Thanks",
     "section": "Sponsors and supporters",
-    "text": "Sponsors and supporters\nI am also grateful for the logistic and financial support from: - The Future Forecasting Ecosystems Centre and BC Ministry of Forests, Canada; - The British Ecological Society"
+    "text": "Sponsors and supporters\nI am also grateful for the logistic and financial support from: - The Future Forecasting Ecosystems Centre and BC Ministry of Forests, Canada\n\nThe British Ecological Society"
   },
   {
     "objectID": "tutos.html",
