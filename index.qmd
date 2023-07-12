@@ -1,13 +1,13 @@
 ---
-title: "Reproducible workflows workshop"
+title: "Reproducible Workflows Workshops"
 author: "Ceres Barros"
 date: last-modified
 date-format: long
 comments: false
 ---
 
-Welcome to the Reproducible Workflows Workshop website.
+Welcome to the Reproducible Workflows Workshops website.
 
-Here you will find the Reproducible Workshops materials, including presentations, code and other useful information. 
+Here you will find the workshops materials, including presentations, code and other useful information. 
 
-This is a live site and resources will be added as they become available.
+This is a live site and resources will be added and updated periodically.
