@@ -1,0 +1,3 @@
+[submodule "tutos_examples/reproducible-workflows-example"]
+	path = tutos_examples/reproducible-workflows-example
+	url = https://github.com/CeresBarros/reproducible-workflows-example.git
