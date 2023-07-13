@@ -19,13 +19,16 @@ website:
             url: https://....
           - text: Report a bug
             url: https://..../Issues
+    side-bar:
+      collapse-level: 4
+      style: floating
   body-footer: |
     Powered by [Quarto](https://quarto.org/)
 
 format:
   html:
     theme:
-      light: minty
+      light: flatly
       dark: darkly
     toc: true
     html-math-method: katex
