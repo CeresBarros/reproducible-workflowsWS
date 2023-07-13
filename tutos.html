@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ceres Barros">
-<meta name="dcterms.date" content="2023-07-11">
+<meta name="dcterms.date" content="2023-07-14">
 
 <title>Reproducible workflows - Tutorials &amp; Examples</title>
 <style>
@@ -22,7 +22,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -63,6 +82,22 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
 
 </head>
 
@@ -139,8 +174,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#reproducible-workflows-in-r" id="toc-reproducible-workflows-in-r" class="nav-link active" data-scroll-target="#reproducible-workflows-in-r">Reproducible workflows in R</a></li>
-  <li><a href="#reproducible-workflows-in-r-and-spades" id="toc-reproducible-workflows-in-r-and-spades" class="nav-link" data-scroll-target="#reproducible-workflows-in-r-and-spades">Reproducible workflows in R <strong>and</strong> SpaDES</a></li>
+  <li><a href="#reproducible-workflows-in-r" id="toc-reproducible-workflows-in-r" class="nav-link active" data-scroll-target="#reproducible-workflows-in-r">Reproducible workflows in R</a>
+  <ul class="collapse">
+  <li><a href="#an-example-using-a-too-simple-species-distribution-model" id="toc-an-example-using-a-too-simple-species-distribution-model" class="nav-link" data-scroll-target="#an-example-using-a-too-simple-species-distribution-model">An example using a (too) simple species distribution model</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -166,7 +203,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 11, 2023</p>
+      <p class="date">July 14, 2023</p>
     </div>
   </div>
   
@@ -178,21 +215,29 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="reproducible-workflows-in-r" class="level2">
 <h2 class="anchored" data-anchor-id="reproducible-workflows-in-r">Reproducible workflows in R</h2>
-<ul>
-<li><strong>Reproducible workflow example for species distribution modelling in R</strong></li>
-</ul>
-<iframe width="780" height="600" src="https://htmlpreview.github.io/?https://github.com/CeresBarros/reproducible-workflows-example/blob/main/global.html"></iframe>
+<section id="an-example-using-a-too-simple-species-distribution-model" class="level3">
+<h3 class="anchored" data-anchor-id="an-example-using-a-too-simple-species-distribution-model"><a href="./tutos_examples/reproducible-workflows-example/global.html">An example using a (too) simple species distribution model</a></h3>
+<p>I was asked multiple times why I picked species distribution models (SDMs) to teach reproducible workflows in R (for ecologists). Simple, climate-based SDMs may not be great to actually forecast species distributions, due to the several other processes they are missing (e.g.&nbsp;dispersal limitation and biotic interactions), but they can be great for hypothesis testing <span class="citation" data-cites="lee-yaw2021">(see <a href="#ref-lee-yaw2021" role="doc-biblioref">Lee-Yaw et al. 2021</a> for a quick overview of SDM strengths and weaknesses)</span> and as educational tools. They are easy to understand, relatively fast to run in nowadays computes, have several R packages that make their fitting and validation easier, the data they need is often easily obtainable at large scales and have many features and requirements that are common with other ecological workflows:</p>
+<p>Need different sources of data that should be as FAIR <span class="citation" data-cites="wilkinson2016">Wilkinson et al. (<a href="#ref-wilkinson2016" role="doc-biblioref">2016</a>)</span> as possible;</p>
+<p>Often require some degree of data preparation (e.g.&nbsp;GIS operations.) to put the data in the right format;</p>
+<p>Rely on statistical steps like model fitting, model validation and running model prediction on the same or new data (be careful with climate-based SDMs and extrapolation, though…!);</p>
+<p>Produce visual outputs (e.g.&nbsp;maps).</p>
+<p>My hope is that this example will can serve as a starting point for you to adapt your current workflows (regardless of what they are used for) and ground them on the <span class="math inline">R^3</span>T principles.</p>
+<p>Click <a href="./tutos_examples/reproducible-workflows-example/global.html">here</a> to open the example on a new page.</p>
+
+
+
 </section>
-<section id="reproducible-workflows-in-r-and-spades" class="level2">
-<h2 class="anchored" data-anchor-id="reproducible-workflows-in-r-and-spades">Reproducible workflows in R <strong>and</strong> SpaDES</h2>
-<ul>
-<li>Coming soon</li>
-</ul>
-
-
 </section>
 
-<p>Powered by <a href="https://quarto.org/">Quarto</a></p></main> <!-- /main -->
+<p>Powered by <a href="https://quarto.org/">Quarto</a></p><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-lee-yaw2021" class="csl-entry" role="listitem">
+Lee-Yaw, Julie A., Jenny L. McCune, Samuel Pironon, and Seema N. Sheth. 2021. <span>“Species Distribution Models Rarely Predict the Biology of Real Populations.”</span> <em>Ecography</em>, December, ecog.05877. <a href="https://doi.org/10.1111/ecog.05877">https://doi.org/10.1111/ecog.05877</a>.
+</div>
+<div id="ref-wilkinson2016" class="csl-entry" role="listitem">
+Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. <span>“The FAIR Guiding Principles for Scientific Data Management and Stewardship.”</span> <em>Scientific Data</em> 3 (1): 160018. <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
