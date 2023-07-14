@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ceres Barros">
-<meta name="dcterms.date" content="2023-07-13">
+<meta name="dcterms.date" content="2023-07-14">
 
 <title>Reproducible workflows - Example of a reproducible workflow in R</title>
 <style>
@@ -115,6 +115,7 @@ div.csl-indent {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
@@ -135,7 +136,7 @@ div.csl-indent {
 
 </head>
 
-<body class="nav-fixed">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -202,21 +203,27 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#the-workflow-at-a-glance" id="toc-the-workflow-at-a-glance" class="nav-link" data-scroll-target="#the-workflow-at-a-glance">The workflow at a glance</a></li>
   <li><a href="#step-by-step" id="toc-step-by-step" class="nav-link" data-scroll-target="#step-by-step">Step by step</a>
-  <ul class="collapse">
+  <ul>
   <li><a href="#project-structure-and-dependencies" id="toc-project-structure-and-dependencies" class="nav-link" data-scroll-target="#project-structure-and-dependencies">Project structure and dependencies</a></li>
-  <li><a href="#running-the-workflow" id="toc-running-the-workflow" class="nav-link" data-scroll-target="#running-the-workflow">Running the workflow</a></li>
+  <li><a href="#running-the-workflow" id="toc-running-the-workflow" class="nav-link" data-scroll-target="#running-the-workflow">Running the workflow</a>
+  <ul class="collapse">
+  <li><a href="#functions-options-and-study-area" id="toc-functions-options-and-study-area" class="nav-link" data-scroll-target="#functions-options-and-study-area">Functions, options and study area</a></li>
+  <li><a href="#data-sourcing-and-preparation" id="toc-data-sourcing-and-preparation" class="nav-link" data-scroll-target="#data-sourcing-and-preparation">Data sourcing and preparation</a></li>
+  <li><a href="#analytical-steps---model-fitting-validation-and-projections" id="toc-analytical-steps---model-fitting-validation-and-projections" class="nav-link" data-scroll-target="#analytical-steps---model-fitting-validation-and-projections">Analytical steps - model fitting, validation and projections</a></li>
+  <li><a href="#outputs" id="toc-outputs" class="nav-link" data-scroll-target="#outputs">Outputs</a></li>
+  <li><a href="#and-voilà" id="toc-and-voilà" class="nav-link" data-scroll-target="#and-voilà">And voilà!</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#a-note-on" id="toc-a-note-on" class="nav-link" data-scroll-target="#a-note-on">A note on…</a>
-  <ul class="collapse">
+  <ul>
   <li><a href="#debugging" id="toc-debugging" class="nav-link" data-scroll-target="#debugging">Debugging</a></li>
   <li><a href="#caching" id="toc-caching" class="nav-link" data-scroll-target="#caching">Caching</a></li>
   <li><a href="#saving" id="toc-saving" class="nav-link" data-scroll-target="#saving">Saving</a></li>
@@ -225,6 +232,10 @@ div.csl-indent {
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -248,7 +259,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 13, 2023</p>
+      <p class="date">July 14, 2023</p>
     </div>
   </div>
   
@@ -921,4 +932,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
