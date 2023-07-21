@@ -16,9 +16,9 @@ website:
       - icon: github
         menu:
           - text: Source code
-            url: https://....
+            url: https://github.com/CeresBarros/reproducible-workflowsWS
           - text: Report a bug
-            url: https://..../Issues
+            url: https://github.com/CeresBarros/reproducible-workflowsWS/Issues
     side-bar:
       collapse-level: 4
       style: floating
