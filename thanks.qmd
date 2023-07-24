@@ -17,6 +17,7 @@ I am thankful to many researchers across the globe who have developed incredible
 ## Sponsors and supporters
 
 I am also grateful for the logistic and financial support from:
+
 - The Future Forecasting Ecosystems Centre and BC Ministry of Forests, Canada
 
 - The [British Ecological Society](https://www.britishecologicalsociety.org/)
