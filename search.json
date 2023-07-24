@@ -14,20 +14,6 @@
     "text": "Workshop facilitators\n\nDr Ceres Barros\nCeres is a Research Ecologist at the Future Forest Ecosystems Centre, within the British Columbia Ministry of Forests, Canada. She has several years of experience in using complex ecological models to understand and forecast ecosystem responses to environmental change (e.g. climate change, fire disturbances, land-use changes, among others) both in applied and theoretical contexts. She has merged her passion to understand ecosystem stability, with her dedication to developing models and modelling tools that are grounded on data, reproducible, reusable and transparent, but also accessible to most ecologists. Her models and workflows are based in R (a programming language most ecologists understand), using SpaDES [a workflow manager, providing a modelling standard and toolkit in R; Chubaty and McIntire (n.d.)] and GitHub to promote collaboration with other model developers within and across disciplines.\nCeres lives in Victoria, BC."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Reproducible Workflows Workshops",
-    "section": "",
-    "text": "Welcome to the Reproducible Workflows Workshops website.\nHere you will find the workshops materials, including presentations, code and other useful information.\nThis is a live site and resources will be added and updated periodically.\n\n\n\nPowered by Quarto"
-  },
-  {
-    "objectID": "presentations.html",
-    "href": "presentations.html",
-    "title": "Presentations",
-    "section": "",
-    "text": "BES Macroecology SIG meeting 2023, Birmingham UK\n\n\n\n\nPowered by Quarto"
-  },
-  {
     "objectID": "thanks.html",
     "href": "thanks.html",
     "title": "Thanks",
@@ -56,6 +42,13 @@
     "text": "I was asked multiple times why I picked species distribution models (SDMs) to teach reproducible workflows in R (for ecologists). Simple, climate-based SDMs may not be great to actually forecast species distributions, due to the several other processes they are missing (e.g. dispersal limitation and biotic interactions), but they can be great for hypothesis testing (see Lee-Yaw et al. 2021 for a quick overview of SDM strengths and weaknesses) and as educational tools. They are easy to understand, relatively fast to run in nowadays computes, have several R packages that make their fitting and validation easier, the data they need is often easily obtainable at large scales and have many features and requirements that are common with other ecological workflows:\nNeed different sources of data that should be as FAIR Wilkinson et al. (2016) as possible;\nOften require some degree of data preparation (e.g. GIS operations.) to put the data in the right format;\nRely on statistical steps like model fitting, model validation and running model prediction on the same or new data (be careful with climate-based SDMs and extrapolation, though…!);\nProduce visual outputs (e.g. maps).\nMy hope is that this example will can serve as a starting point for you to adapt your current workflows (regardless of what they are used for) and ground them on the R^3T principles.\nClick here to open the example on a new page."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Reproducible Workflows Workshops",
+    "section": "",
+    "text": "Welcome to the Reproducible Workflows Workshops website.\nHere you will find the workshops materials, including presentations, code and other useful information.\nThis is a live site and resources will be added and updated periodically.\n\n\n\nPowered by Quarto"
+  },
+  {
     "objectID": "workshop-dates.html",
     "href": "workshop-dates.html",
     "title": "Workshop dates",
@@ -68,5 +61,12 @@
     "title": "Workshop dates",
     "section": "",
     "text": "2023 BES Macroecology SIG annual meeting - MacroBrum 2023 - July 12th, 2023, Birmingham UK"
+  },
+  {
+    "objectID": "presentations.html",
+    "href": "presentations.html",
+    "title": "Presentations",
+    "section": "",
+    "text": "BES Macroecology SIG meeting 2023, Birmingham UK\n\n\n\n\nPowered by Quarto"
   }
 ]
