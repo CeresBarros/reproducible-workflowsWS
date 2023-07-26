@@ -22,8 +22,11 @@ website:
     side-bar:
       collapse-level: 4
       style: floating
-  body-footer: |
-    Powered by [Quarto](https://quarto.org/)
+  page-footer:
+    right:
+      - text: "Powered by Quarto"
+    left:
+      - text: "Future Forest Ecosystems Centre, BC Ministry of Forests"
 
 format:
   html:
