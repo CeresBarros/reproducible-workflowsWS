@@ -35,9 +35,14 @@ jobs:
             any::knitr
             any::rmarkdown
 
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
+      # - name: Render and Publish
+      #   uses: quarto-dev/quarto-actions/publish@v2
+      #   with:
+      #     path:
+      #     target: gh-pages
+
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
