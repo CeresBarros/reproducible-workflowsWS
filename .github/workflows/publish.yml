@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
+        with:
+          submodules: recursive
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -35,14 +37,14 @@ jobs:
             any::knitr
             any::rmarkdown
 
-      # - name: Render and Publish
-      #   uses: quarto-dev/quarto-actions/publish@v2
-      #   with:
-      #     path:
-      #     target: gh-pages
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          path:
+          target: gh-pages
 
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
+      # - name: Render Quarto Project
+      #   uses: quarto-dev/quarto-actions/render@v2
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
