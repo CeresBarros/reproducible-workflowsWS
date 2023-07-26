@@ -1,1 +1,1 @@
-Sitemap: https://CeresBarros.github.io/reproducible-workflowsWS/sitemap.xml
+Sitemap: https://github.com/CeresBarros/reproducible-workflowsWS/sitemap.xml
