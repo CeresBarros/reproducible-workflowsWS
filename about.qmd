@@ -7,7 +7,7 @@ comments: false
 bibliography: references.bib
 ---
 
-This website hosts live resources used for the "Reproducible workflows" workshop, developed by Dr Ceres Barros with a lot of inspiration from other resources (see [Thanks](thanks.qmd))
+This website hosts live resources used for the "Reproducible workflows" workshop, developed by Dr Ceres Barros with a lot of inspiration from other resources (see [Thanks](thanks.qmd)).
 
 The workshop materials presented here were initially conceived for the BES Macroecology SIG meeting held in Birmingham, UK, July 12-13th, 2023.
 
@@ -15,9 +15,10 @@ The workshop materials presented here were initially conceived for the BES Macro
 
 ### Dr Ceres Barros
 
-Ceres is a Research Ecologist at the Future Forest Ecosystems Centre, within the British Columbia Ministry of Forests, Canada.
+Ceres is a Research Ecologist at the [Future Forest Ecosystems Centre](https://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship/natural-resources-climate-change/future-forest-ecosystems-centre), within the British Columbia Ministry of Forests, Canada.
 She has several years of experience in using complex ecological models to understand and forecast ecosystem responses to environmental change (e.g. climate change, fire disturbances, land-use changes, among others) both in applied and theoretical contexts.
-She has merged her passion to understand ecosystem stability, with her dedication to developing models and modelling tools that are grounded on data, reproducible, reusable and transparent, but also accessible to most ecologists.
-Her models and workflows are based in [R](#0) (a programming language most ecologists understand), using SpaDES [a workflow manager, providing a modelling standard and toolkit in R; @chubaty] and [GitHub](#0) to promote collaboration with other model developers within and across disciplines.
+
+Ceres has merged her passion to understand ecosystem stability, with her dedication to developing models and modelling tools that are grounded on data, reproducible, reusable and transparent, but also accessible to most ecologists.
+Her models and workflows are based in [R](#0) (a programming language most ecologists understand), using SpaDES [a workflow manager, providing a modelling standard and toolkit in R; @chubaty] and [GitHub](https://github.com/) to promote collaboration with other model developers within and across disciplines.
 
 Ceres lives in Victoria, BC.

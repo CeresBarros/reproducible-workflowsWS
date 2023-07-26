@@ -14,7 +14,7 @@ I was asked multiple times why I picked species distribution models (SDMs) to te
 
 Need different sources of data that should be as FAIR @wilkinson2016 as possible;
 
-Often require some degree of data preparation (e.g. GIS operations.) to put the data in the right format;
+Often require some degree of data preparation (e.g. GIS operations) to put the data in the right format;
 
 Rely on statistical steps like model fitting, model validation and running model prediction on the same or new data (be careful with climate-based SDMs and extrapolation, though...!);
 
